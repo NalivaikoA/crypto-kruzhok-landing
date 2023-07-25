@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Crypto kruzhok</title>
@@ -13,19 +13,39 @@
 <body class="page-body">
     <header class="main-header">
         <nav class="main-navigation">
-            <ul class="header-logo">
-                <li>            
-                    <a class="logo">
-                        <img src="img/png-transparent.png" width="34" height="34" alt="Логотип Crypto kruzhok">
-                    </a>
-                </li>
-                <li><p class="header-logo-title">Crypto kruzhok</p></li>
-            </ul>
+            <div class="header-logo">       
+                <img src="img/main-logo-old.png" width="34" height="34" alt="Логотип Crypto kruzhok">
+                <p class="header-logo-title">Crypto kruzhok</p>
+            </div>
             <ul class="site-navigation">
                 <li><a href="#">О нас</a></li>
-                <li><a href="#">Модули</a></li>
+                <li>
+                    <a href="#">Модули</a>
+                    <button data-spoller type="button" class="menu-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="0.625em" viewBox="0 0 320 512"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                    </button>
+                    <!-- <ul class="header-logo">
+                        <li>            
+                            <a class="logo">
+                                <img src="img/png-transparent.png" width="34" height="34" alt="Логотип Crypto kruzhok">
+                            </a>
+                        </li>
+                        <li>            
+                            <a class="logo">
+                                <img src="img/png-transparent.png" width="34" height="34" alt="Логотип Crypto kruzhok">
+                            </a>
+                        </li>
+                        <li>            
+                            <a class="logo">
+                                <img src="img/png-transparent.png" width="34" height="34" alt="Логотип Crypto kruzhok">
+                            </a>
+                        </li>
+                    </ul> -->
+                </li>
             </ul>
-            <a class="tg-link" href="#">1</a>
+            <a class="tg-link" href="#">
+                <img src="img/telegram.png" width="30" height="30" alt="Send message icon">
+            </a>
         </nav>
     </header>
     <main class="container">
@@ -146,7 +166,7 @@
         <div class="page-footer-wr">
             <section class="footer-logo-wr">
                 <div class="footer-logo">
-                        <img src="img/png-transparent.png" width="26" height="26" alt="Логотип Crypto kruzhok">
+                        <img src="img/main-logo-old.png" width="26" height="26" alt="Логотип Crypto kruzhok">
                     <p>Crypto kruzhok</p>
                 </div>
                 <p class="footer-copyright">&copy;   crypto kruzhok 2021-2022</p>
@@ -159,12 +179,7 @@
                 </ul>
             </section>
             <a class="footer-tg-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> 
-                    <g>
-                        <path fill="none" d="M0 0h24v24H0z"/> 
-                        <path fill-rule="nonzero" d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0 2C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-3.11-8.83l-2.498-.779c-.54-.165-.543-.537.121-.804l9.733-3.76c.565-.23.885.061.702.79l-1.657 7.82c-.116.557-.451.69-.916.433l-2.551-1.888-1.189 1.148c-.122.118-.221.219-.409.244-.187.026-.341-.03-.454-.34l-.87-2.871-.012.008z"/> 
-                    </g>
-                </svg>
+                <img src="img/telegram.png" width="26" height="26" alt="Send message icon">
             </a>
         </div>
     </footer>

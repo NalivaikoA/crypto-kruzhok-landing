@@ -46,7 +46,16 @@ img {
     height: 72px;
     background-color: var(--background-card);
     margin-bottom: 79px;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
 }
+
+.header__scrolled {
+    background-color: #1F1F1F50;
+  }
 
 .main-navigation {
     display: flex;
@@ -305,6 +314,10 @@ img {
     position: relative;
 }
 
+.product-item:nth-child(n+3) {
+    display: none;
+}
+
 .product-item-wr {
     margin-left: 60px;
     margin-top: 54px;
@@ -338,10 +351,17 @@ img {
     background-color: #D9D9D9;
     opacity: 0.2;
     border-radius: 50%;
-    /* transition: background-color 0,6s ease; */
+    transition: background-color 0,6s ease;
+    cursor: pointer;
 }
 
 .dots-container .dot-active {
+    background-color: #D9D9D9;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.dot:hover {
     background-color: #D9D9D9;
     opacity: 1;
 }

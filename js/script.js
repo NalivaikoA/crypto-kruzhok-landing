@@ -73,57 +73,7 @@ slidesContainer.addEventListener('touchend', () => {
 
 
 
-
-
-// РАБОЧИЙ КОД БЕЗ СВАЙПА
-// const slidesContainer = document.querySelector(".products-list")
-// const slides = document.querySelectorAll(".product-item")
-// const dots = document.querySelectorAll('.dot')
-
-// let currentIndex = 0;
-
-// function showSlide(index) {
-//     if (index === 2) {
-//         slidesContainer.insertBefore(slides[2], slides[0]);
-//         }
-
-//     if (index === 1) {
-//             slidesContainer.insertBefore(slides[1], slides[2]);
-//             }
-
-//     if (index === 0) {
-//             slidesContainer.insertBefore(slides[0], slides[1]);
-//             }    
-
-//   slides.forEach((slide, i) => {
-//     if (i === index || i === (index + 1) % slides.length) {
-//       slide.style.display = 'inline-block';
-//     } else {
-//       slide.style.display = 'none';
-//     }
-//   });
-  
-//   dots.forEach((dot, i) => {
-//     dot.classList.toggle('dot-active', i === index);
-//   });
-// }
-
-
-// dots.forEach((dot, index) => {
-//   dot.addEventListener('click', () => {
-//     currentIndex = index;
-//     showSlide(currentIndex);
-//   });
-// });
-
-// showSlide(currentIndex);
-
-
-
-
-
-
-
+// Хэдэр при скролле становится полупрозрачным;
 function updateScroll() {
     if (window.scrollY > 0) {
       let card = document.querySelector(".main-header");

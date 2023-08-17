@@ -9,8 +9,8 @@
 }
 
 .page-body {
-	min-width: 1160px;
-	margin: 0;
+    /* max-width: 1280px; */
+    margin: 0 auto;
 	padding: 0;
 	font-family: "Montserrat", Arial, sans-serif;
 	font-size: 20px;
@@ -18,7 +18,6 @@
 	font-weight: 500;
 	color: var(--basic-grey);
 	background-color: var(--background);
-
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
@@ -43,7 +42,7 @@ img {
 }
 
 .main-header {
-    height: 72px;
+    min-height: 72px;
     background-color: var(--background-card);
     margin-bottom: 79px;
     position: sticky;
@@ -58,11 +57,14 @@ img {
   }
 
 .main-navigation {
+    max-width: 1160px;
+    padding: 0 60px;
     display: flex;
     align-items: center;
-    width: 1160px;
     margin: 0 auto;
     position: relative;
+    /* outline: 5px solid green;
+    outline-offset: -5px; */
 }
 
 .site-navigation, .features-list, .about-list, .footer-navigation-list, .products-list {
@@ -74,6 +76,9 @@ img {
 .header-logo {
     display: flex;
     align-items: center;
+    width: calc(37.5%);
+    /* outline: 5px solid rgb(0, 34, 128);
+    outline-offset: -5px; */
 }
 
 .site-navigation a {
@@ -89,10 +94,20 @@ img {
 
 .site-navigation {
     display: flex;
-    gap: 31px;
-    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* gap: 31px; */
+    /* position: absolute;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0); */
+    width: calc(25%);
+    /* outline: 5px solid rgb(192, 179, 8);
+    outline-offset: -5px; */
+}
+
+.site-navigation li:first-child {
+    margin-right: 31px;
 }
 
 .menu-arrow {
@@ -111,20 +126,25 @@ img {
 
 .tg-link {
     margin-left: auto;
-    margin-top: 12px;
+    width: calc(37.5%);
+    /* outline: 5px solid rgb(128, 0, 90);
+    outline-offset: -5px; */
 }
 
 .tg-link img {
     filter: invert(100%);
+    float: right;
 }
 
-.container {
-	width: 1160px;
-	margin: 0 auto;
-    padding: 0 15px;
+.page-main {
+    /* outline: 5px solid rgb(138, 9, 89);
+    outline-offset: -5px; */
+    padding: 0 60px;
+    max-width: 1160px;
+    margin: 0 auto;
 }
 
-.container h2 {
+.page-main h2 {
     font-size: 45px;
 }
 
@@ -152,7 +172,7 @@ img {
 }
 
 .features {
-    height: 1377px;
+    min-height: 1377px;
 }
 
 .features h2, .features p, .questions h2, .questions p  {
@@ -256,27 +276,23 @@ img {
 }
 
 .about, .products {
-    height: 522px;
+    min-height: 522px;
 }
 
-.about-list, .products-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.about-list {
+    display: grid;
     gap: 35px;
+    grid-template-columns: repeat(auto-fill, minmax(283px, auto));
+
 }
 
 .about-item {
-    width: 363px;
-    height: 435px;
+    flex-grow: 283px;
+    min-height: 435px;
     border-radius: 20px;
     background-color: var(--background-card);
     position: relative;
-}
-
-.about-item-wr {
-    margin-left: 40px;
-    margin-top: 40px;
+    padding: 40px 40px 0;
 }
 
 .about h1, .products h1 {
@@ -291,10 +307,12 @@ img {
 .about-list h2 {
     font-size: 35px;
     margin: 0 0 20px 0;
+    font-weight: 400;
 }
 
 .about-list p {
     font-size: 18px;
+    font-weight: 400;
     margin: 0 0 41px 0;
 }
 
@@ -306,12 +324,31 @@ img {
     bottom: 57px;
 }
 
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(562px, auto));
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: center;
+    gap: 35px;
+    transition: transform 0.5s ease;
+}
+
 .product-item {
-    width: 562px;
     height: 435px;
     border-radius: 20px;
     background-color: var(--background-card);
     position: relative;
+}
+
+.product-item h2 {
+    line-height: normal;
+    margin-top: 54px;
+    margin-bottom: 0;
+}
+
+.product-item p {
+    margin-top: 16px;
 }
 
 .product-item:nth-child(n+3) {
@@ -389,15 +426,29 @@ img {
 }
 
 .page-footer-wr {
+    max-width: 1160px;
+    padding: 0 60px;
     display: flex;
     justify-content: space-between;
-    width: 1160px;
     margin: 0 auto;
     margin-top: 67px;
+    padding: 0 60px;
+}
+
+.logo-navigation-wr {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* gap: 214px; */
+    width: 49%;
 }
 
 .footer-navigation {
-    margin-right: 370px;
+    margin-left: auto;
+}
+
+.footer-navigation-list {
+    width: 153px;
 }
 
 .footer-logo {
@@ -446,5 +497,3 @@ img {
 .footer-tg-link img {
     filter: invert(40%);
 }
-
-

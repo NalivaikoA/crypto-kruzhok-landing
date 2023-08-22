@@ -514,6 +514,11 @@ img {
         line-height: calc(20px + (8 + 8 * 0.7) * ((100vw - 320px) / 768));;
     }
 
+    .main-header {
+        margin-bottom: 10.286vw;
+    }
+    
+
     .header-logo-title {
         font-size: calc(14px + (6 + 6 * 0.7) * ((100vw - 320px) / 768));
         line-height: calc(22px + (6 + 6 * 0.7) * ((100vw - 320px) / 768));
@@ -557,6 +562,7 @@ img {
         /* padding-top: 60px; */
         padding-top: calc(35px + (25 + 25 * 0.7) * ((100vw - 320px) / 768));
         align-items: start;
+        margin-bottom: 11.067vw;
     }
 
     .advantage h2 {
@@ -662,7 +668,7 @@ img {
         flex-grow: 261px;
         min-height: 400px;
         position: relative;
-        padding: 40px 0 0 5.208vw;
+        padding: 40px 5px 0 5.208vw;
         word-wrap: break-word;
     }
 
@@ -671,7 +677,8 @@ img {
         font-size: calc(26px + (9 + 9 * 0.7) * ((100vw - 320px) / 768));
         font-weight: 600;
         margin-bottom: 40px;
-        margin-top: 125px;
+        /* margin-top: 125px; */
+        margin-top: 16.27vw;
     }
 
     .about-list>li:last-child {
@@ -772,7 +779,7 @@ img {
     }
 
     .questions {
-        margin-bottom: 98px;
+        margin-bottom: 12.76vw;
         /* padding-left: 40px; */
         padding-left: calc(30px + (10 + 10 * 0.7) * ((100vw - 320px) / 768));;
         margin-top: 0;
@@ -791,11 +798,13 @@ img {
 
     .page-footer {
         height: 211px;
+        height: 27.47vw;
     }
     .page-footer-wr {
         max-width: 720px;
         padding: 0 3.125vw;
         margin-top: 87px;
+        margin-top: 11.328vw;
         /* padding: 0 52px; */
     }
 
